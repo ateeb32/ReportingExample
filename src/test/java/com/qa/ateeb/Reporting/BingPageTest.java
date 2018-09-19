@@ -43,7 +43,9 @@ public class BingPageTest {
 	public void bingSearchBox() throws InterruptedException {
 		test = report.startTest("Search Text");
 		driver.get("https://www.bing.com/");
+		
 		test.log(LogStatus.INFO, "Bing Opened"); //REPORTING
+		
 		BingPage page = PageFactory.initElements(driver, BingPage.class); // Call all elements from BingPage class
 		BingSearchPage searchPage = PageFactory.initElements(driver, BingSearchPage.class);
 		page.searchFor("Selenium");
@@ -77,7 +79,9 @@ public class BingPageTest {
 	public void bingSearchBoxKittens() throws InterruptedException {
 		test = report.startTest("Search Text");
 		driver.get("https://www.bing.com/");
+		
 		test.log(LogStatus.INFO, "Bing Opened");
+		
 		BingPage page = PageFactory.initElements(driver, BingPage.class); // Call all elements from BingPage class
 		BingSearchPage searchPage = PageFactory.initElements(driver, BingSearchPage.class);
 		page.searchFor("Selenium");
