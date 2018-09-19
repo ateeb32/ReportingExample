@@ -41,7 +41,9 @@ public class BingPageTest {
 	
 	@Test
 	public void bingSearchBox() throws InterruptedException {
-		test = report.startTest("Search Text");
+		
+		test = report.startTest("Search Text"); //REPORTING
+		
 		driver.get("https://www.bing.com/");
 		
 		test.log(LogStatus.INFO, "Bing Opened"); //REPORTING
